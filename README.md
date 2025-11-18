@@ -125,7 +125,7 @@ Adjust:
 ## 📸 Screenshots
 
 ```
-<img width="986" height="657" alt="image" src="https://github.com/user-attachments/assets/53c6bf04-cb89-4e4e-8879-6ce92913f7f7" />
+https://github.com/user-attachments/assets/53c6bf04-cb89-4e4e-8879-6ce92913f7f7
 
 ```
 
