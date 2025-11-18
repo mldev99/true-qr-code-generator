@@ -1,36 +1,153 @@
-# True QR Code Generator (Python)
+# 📦 QR Code Generator (Python + Streamlit)
 
-A small, standalone QR code generator in Python. Provides a simple Python API and a CLI to generate QR codes as PNG images.
+A simple and interactive **QR Code Generator** built using **Python** and **Streamlit**.  
+This tool lets users generate QR codes from text or URLs, customize settings, and download the generated QR image instantly.
 
-Requirements
-- Python 3.8+
-- See `requirements.txt` for dependencies
+---
 
-Quick start
+## 📑 Table of Contents
+
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Configuration](#-configuration)
+- [Screenshots](#-screenshots)
+- [Troubleshooting](#-troubleshooting)
+- [Contributors](#-contributors)
+- [License](#-license)
+
+---
+
+## 🧩 Introduction
+
+This project provides a lightweight and user-friendly web application for generating QR codes.  
+Users can enter any text or URL, and the app will instantly create a downloadable QR code image.
+
+The app is powered by **Streamlit**, making it browser-based, responsive, and easy to deploy.
+
+---
+
+## ✨ Features
+
+✔ Generate QR codes from text or URLs  
+✔ Download the QR code as a PNG image  
+✔ Customize QR size, border, and color  
+✔ Mobile-friendly interface  
+✔ No backend required — fully client-side via Streamlit
+
+---
+
+## 🛠 Tech Stack
+
+- **Python 3.x**
+- **Streamlit**
+- **qrcode**
+- **Pillow (PIL)**
+
+---
+
+## ⚙ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/qr-code-generator.git
+cd qr-code-generator
+```
 
 Install dependencies:
 
-```powershell
+```bash
 pip install -r requirements.txt
 ```
 
-Generate a QR code from the CLI:
+Or install manually:
 
-```powershell
-python .\scripts\qr_cli.py --text "https://example.com" --out example.png
+```bash
+pip install streamlit qrcode pillow
 ```
 
-Use from Python:
+---
+
+## ▶ Usage
+
+Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+
+Then open the local development URL shown in the terminal (usually `http://localhost:8501/`).
+
+Enter any text/URL → Customize options → Download QR Code!
+
+---
+
+## 📂 Project Structure
+
+```
+qr-code-generator/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── assets/
+    └── sample_qr.png
+```
+
+---
+
+## ⚙ Configuration
+
+You can modify QR settings inside `app.py`:
 
 ```python
-from src.qr_generator import generate_qr
-generate_qr("Hello world", "qrcode.png")
+qr = qrcode.QRCode(
+    version=1,
+    box_size=10,
+    border=4
+)
 ```
 
-Tests
+Adjust:
+- **Version** → Complexity  
+- **Box size** → Pixel size  
+- **Border** → Margin thickness  
+- **Colors** → Fill and background  
 
-```powershell
-python -m pytest -q
+---
+
+## 📸 Screenshots
+
+(Add your own images in the `assets/` folder.)
+
+```
+![Demo](assets/sample_qr.png)
 ```
 
-License: MIT (use as you like)
+---
+
+## 🔧 Troubleshooting
+
+| Issue | Solution |
+|-------|----------|
+| Streamlit not launching | Check Python PATH / reinstall Streamlit |
+| QR not generating | Ensure text field is not empty |
+| Image not downloading | Enable pop-ups or check browser settings |
+
+---
+
+## 👨‍💻 Contributors
+
+- **Your Name** – Developer & Maintainer  
+Contributions are welcome! Feel free to open issues or pull requests.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.  
+You may use, modify, and distribute this project freely.
