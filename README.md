@@ -113,16 +113,6 @@ Enter any text/URL → Customize options → Download QR Code!
 
 ## ⚙ Configuration
 
-You can modify QR settings inside `app.py`:
-
-```python
-qr = qrcode.QRCode(
-    version=1,
-    box_size=10,
-    border=4
-)
-```
-
 Adjust:
 - **Version** → Complexity  
 - **Box size** → Pixel size  
@@ -133,10 +123,9 @@ Adjust:
 
 ## 📸 Screenshots
 
-(Add your own images in the `assets/` folder.)
-
 ```
-![Demo](assets/sample_qr.png)
+<img width="986" height="657" alt="image" src="https://github.com/user-attachments/assets/53c6bf04-cb89-4e4e-8879-6ce92913f7f7" />
+
 ```
 
 ---
@@ -153,7 +142,7 @@ Adjust:
 
 ## 👨‍💻 Contributors
 
-- **Your Name** – Developer & Maintainer  
+- **Suraj Maurya** – Developer & Maintainer  
 Contributions are welcome! Feel free to open issues or pull requests.
 
 ---
