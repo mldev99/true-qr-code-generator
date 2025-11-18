@@ -1,5 +1,6 @@
 ## 📦 QR Code Generator (Python + Streamlit)  
 #Live link --  https://true-qr-code-generator.streamlit.app/
+
 A simple and interactive **QR Code Generator** built using **Python** and **Streamlit**.  
 This tool lets users generate QR codes from text or URLs, customize settings, and download the generated QR image instantly.
 
