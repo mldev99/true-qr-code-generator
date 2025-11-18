@@ -89,14 +89,25 @@ Enter any text/URL → Customize options → Download QR Code!
 ## 📂 Project Structure
 
 ```
-qr-code-generator/
+.
+├── scripts/
+│   └── qr_cli.py
 │
-├── app.py
-├── requirements.txt
+├── src/
+│   ├── __pycache__/
+│   └── qr_generator.py
+│
+├── tests/
+│   ├── __pycache__/
+│   └── test_qr_generator.py
+│
 ├── README.md
-└── assets/
-    └── sample_qr.png
+├── requirements.txt
+└── streamlit_app.py
 ```
+
+---
+
 
 ---
 
